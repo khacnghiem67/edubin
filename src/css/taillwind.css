@@ -1,0 +1,77 @@
+@import './_base.tailwind.css';
+@import './_header.tailwind.css';
+@import './_slider.tailwind.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* content */
+.adjust-width {
+  @apply max-w-[var(--max-width-content-ssm)] sm:max-w-[var(--max-width-content-sm)] md:max-w-[var(--max-width-content-md)] lg:max-w-[var(--max-width-content-lg)] xl:max-w-[var(--max-width-content-xl)] mx-auto;
+}
+
+/* flex */
+.flex-center-between {
+  @apply flex justify-between items-center;
+}
+
+.flex-center-center {
+  @apply flex justify-center items-center;
+}
+
+/* utilities */
+
+.title-with-border-bottom {
+  @apply relative pb-1 mb-4 text-lg font-bold text-secondary after:absolute after:left-0 after:top-full after:w-8 after:h-px after:bg-primary;
+}
+
+/* buttons */
+.btn {
+  @apply transition-base inline-block rounded font-bold bg-primary  text-secondary  hover:bg-secondary hover:text-primary;
+}
+
+.btn-primary {
+  @apply px-10 py-3 btn;
+}
+
+/* transition */
+
+.transition-base {
+  @apply transition-all duration-500 ease-linear;
+}
+
+/* hover */
+.hover-text-primary {
+  @apply transition-base hover:text-primary;
+}
+
+.hover-bg-primary {
+  @apply transition-base hover:bg-primary;
+}
+
+.hover-scale-img {
+  @apply transition-base duration-1000 hover:scale-[1.1];
+}
+
+.hover-bg-p-text-s {
+  @apply transition-base  hover:bg-primary hover:text-secondary;
+}
+
+.hover-bg-p-text-white {
+  @apply transition-base hover:bg-primary hover:text-white;
+}
+
+/* center element with position */
+
+.center-position {
+  @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
+}
+
+.center-x-position {
+  @apply absolute left-[50%] translate-x-[-50%];
+}
+
+.center-y-position {
+  @apply absolute top-[50%] translate-y-[-50%];
+}

@@ -1,0 +1,49 @@
+:root {
+  --max-width-content-xl: 1200px;
+  --max-width-content-lg: 960px;
+  --max-width-content-md: 720px;
+  --max-width-content-sm: 540px;
+  --max-width-content-ssm: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  padding: 0 15px;
+}
+
+/* line clamp */
+.line-clamp,
+.line-clamp-2,
+.line-clamp-3 {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.line-clamp-2 {
+  -webkit-line-clamp: 2;
+}
+
+.line-clamp-3 {
+  -webkit-line-clamp: 3;
+}
+
+/* swipper */
+.swiper-pagination-bullet-active {
+  background: #ffc600;
+}
+
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin: 0 6px;
+}

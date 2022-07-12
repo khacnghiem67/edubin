@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edubin - Register</title>
+    <!-- font awasome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- slick css -->
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" /> -->
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+
+    <!-- my js -->
+    <script>
+      // variables
+      const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
+    </script>
+    <script defer src="./src/js/global/header.js"></script>
+    <script defer src="./src/js/global/global.js"></script>
+    <script defer src="./src/js/register/register.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--start header -->
+
+      <header class="header">
+        <!-- header top -->
+        <section class="bg-secondary hidden lg:block">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div class="py-4 flex-center-between text-gray font-medium">
+              <!-- header top infos -->
+              <div class="flex gap-x-5">
+                <div>
+                  <i class="fa-solid fa-envelope mr-1"></i>
+                  <a href="#">info@yourmail.com</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone mr-1"></i>
+                  <span>+0123-456-5678</span>
+                </div>
+              </div>
+              <!-- header top links -->
+              <div class="flex gap-x-5">
+                <!-- header top links social -->
+                <div class="flex gap-x-3">
+                  <span>Follow Us : </span>
+                  <div class="flex gap-x-3">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- header top links auth -->
+                <div class="flex gap-x-2 text-primary font-bold">
+                  <a href="#" class="transition-base hover:text-white">Login</a>
+                  <span>/</span>
+                  <a
+                    href="./register.html"
+                    class="transition-base hover:text-white"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- header nagivation -->
+        <section class="header-navigation">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div class="relative flex-center-between py-5 lg:py-0">
+              <!-- header logo -->
+              <a href="./index.html">
+                <img
+                  src="https://thepixelcurve.com/html/edubin/images/logo.png"
+                  alt="logo"
+                  class="header__logo w-[179px] h-[49px]"
+                />
+              </a>
+              <!-- header nav -->
+              <div
+                class="flex items-center gap-x-8 font-medium text-base text-secondary lg:text-sm xl:text-base"
+              >
+                <nav
+                  class="header-nav transition-base z-40 overflow-hidden absolute top-full left-0 right-0 bg-white lg:overflow-visible lg:relative lg:block"
+                >
+                  <ul class="px-3 py-2 flex flex-col lg:p-0 lg:flex-row">
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2.5 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8 lg:px-4"
+                        ><span> HOME </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >HOME 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >HOME 1</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+                <div
+                  class="flex gap-x-5 text-lg lg:text-base xl:text-lg items-center"
+                >
+                  <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span
+                      class="px-1 text-sm rounded-full absolute top-[-4px] right-[-8px] text-white bg-primary"
+                      >0</span
+                    >
+                  </a>
+                  <!-- header toggle icon -->
+                  <div
+                    class="header-toggleNavBtn expand toggle-menu-icon p-2 w-[48px] cursor-pointer lg:hidden"
+                  >
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <!-- end header -->
+      <!-- ------------------------------------------------------------------>
+
+      <!--start page header -->
+
+      <section
+        class="page-header relative bg-[url('https://thepixelcurve.com/wp/edubin/wp-content/uploads/2019/03/e1-5.jpg')] bg-cover bg-no-repeat after:bg-secondary after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-90"
+      >
+        <div class="container adjust-width">
+          <div class="relative py-24 z-10 text-white">
+            <h2 class="text-4xl font-bold pb-5 sm:text-5xl">
+              Student Registration
+            </h2>
+            <div>
+              <a href="./index.html">Home</a>
+              <span>/</span>
+              <span>Student Registration</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end page header -->
+      <!-- ------------------------------------------------------------------>
+
+      <section class="register-form bg-coursesBg">
+        <div class="container adjust-width">
+          <div class="py-14 sm:py-28">
+            <div class="p-12 bg-white">
+              <form id="form">
+                <div class="mb-7 grid grid-cols-1 gap-7 sm:grid-cols-2">
+                  <div>
+                    <div class="font-bold pb-4">First Name</div>
+                    <input
+                      type="text"
+                      placeholder="First Name"
+                      name="text"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                  <div>
+                    <div class="font-bold pb-4">Last Name</div>
+                    <input
+                      type="text"
+                      placeholder="Last Name"
+                      name="text"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                </div>
+                <div class="mb-7 grid grid-cols-1 gap-7 sm:grid-cols-2">
+                  <div>
+                    <div class="font-bold pb-4">User Name</div>
+                    <input
+                      type="text"
+                      placeholder="User Name"
+                      name="userName"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                  <div>
+                    <div class="font-bold pb-4">Email</div>
+                    <input
+                      type="email"
+                      placeholder="E-mail"
+                      name="email"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                </div>
+                <div class="mb-7 grid grid-cols-1 gap-7 sm:grid-cols-2">
+                  <div>
+                    <div class="font-bold pb-4">Password</div>
+                    <input
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                  <div>
+                    <div class="font-bold pb-4">Password confirmation</div>
+                    <input
+                      type="password"
+                      placeholder="Password confirmation"
+                      name="rePassword"
+                      class="px-3 py-2.5 outline-none border border-borderBottomColor rounded w-full"
+                    />
+                    <div class="pt-2 error-des text-red-500 font-bold"></div>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <button
+                    type="submit"
+                    class="px-6 py-3 transition-base rounded font-medium bg-secondary text-white hover:bg-primary hover:text-secondary"
+                  >
+                    Register
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--start footer -->
+
+      <footer class="footer">
+        <!-- footer top -->
+        <section class="bg-secondary">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div
+              class="pt-10 pb-20 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]"
+            >
+              <!-- start footer top content column 1 -->
+              <div class="col-span-1 sm:col-span-2 md:col-span-1">
+                <a href="#">
+                  <img
+                    src="https://thepixelcurve.com/html/edubin/images/logo-2.png"
+                    alt="logo"
+                    class="w-[179px] h-[49px]"
+                  />
+                </a>
+                <p class="py-5 text-white font-medium">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  aspernatur dolores quaerat praesentium accusantium cum
+                  deserunt voluptates est maiores quidem?
+                </p>
+                <div class="flex items-center gap-4">
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- start footer top content column 2 -->
+              <div class="text-white">
+                <h4 class="font-bold text-lg pb-5">Sitemap</h4>
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Home</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >About us</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Courses</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >News</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Event</span
+                      ></a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Home</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >About us</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Courses</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >News</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Event</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- start footer top content column 3 -->
+              <div class="text-white">
+                <h4 class="font-bold text-lg pb-5">Sitemap</h4>
+                <div>
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Home</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >About us</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Courses</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >News</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Event</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <!-- start footer top content column 4 -->
+              <div class="text-white col-span-1 sm:col-span-2 md:col-span-1">
+                <h4 class="pb-5 font-bold text-lg">Contact us</h4>
+
+                <div>
+                  <div class="flex mb-2.5">
+                    <i class="fa fa-home fa-sm pt-3.5 pr-4 text-primary"></i>
+                    <span
+                      >143 castle road 517 district, kiyev port south
+                      Canada</span
+                    >
+                  </div>
+
+                  <div class="flex items-center mb-2.5">
+                    <i class="fa fa-phone fa-sm pr-4 text-primary"></i>
+                    <span>+3 123 456 789</span>
+                  </div>
+
+                  <div class="flex items-center mb-2.5">
+                    <i class="fa fa-home fa-sm pr-4 text-primary"></i>
+                    <span>info@yourmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer bottom -->
+        <section class="bg-[#021d3a]">
+          <div class="container adjust-width">
+            <div
+              class="py-6 flex-center-between flex-col text-center font-medium text-white md:flex-row"
+            >
+              <div class="mb-5 md:mb-0">
+                © Copyrights 2020 Edubin All rights reserved.
+              </div>
+              <div>Designed by Pixelcurve</div>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+      <!-- end footer -->
+      <!-- ------------------------------------------------------------------>
+    </div>
+
+    <!-- start scroll to top -->
+
+    <a
+      href="#"
+      class="scroll-to-top invisible transition-base fixed z-40 flex-center-center rounded-lg w-[40px] h-[40px] bottom-[30px] right-[30px] bg-primary text-white hover:bg-secondary"
+    >
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- end scroll to top -->
+
+    <!-- ---------------------------------------------------------------- -->
+  </body>
+</html>

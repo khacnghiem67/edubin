@@ -1,0 +1,33 @@
+/* header toggle btn */
+.header-toggleNavBtn.expand div:first-child {
+  transform: rotate(46deg);
+  top: 12px;
+}
+
+.header-toggleNavBtn.expand div:nth-child(2) {
+  opacity: 0;
+}
+
+.header-toggleNavBtn.expand div:last-child {
+  transform: rotate(134deg);
+  top: -7px;
+}
+
+/* header fixed nav */
+.header-navigation.nav-fixed {
+  position: fixed;
+  background: white;
+  z-index: 40;
+  width: 100%;
+  top: 0;
+  animation: fixed 1.5s;
+}
+
+@keyframes fixed {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0;
+  }
+}

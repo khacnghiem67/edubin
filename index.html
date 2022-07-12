@@ -1,0 +1,1968 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edubin</title>
+    <!-- font awasome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- swipper  -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/index.css" />
+
+    <!-- my js -->
+    <script>
+      // variables
+      const $ = document.querySelector.bind(document);
+      const $$ = document.querySelectorAll.bind(document);
+    </script>
+    <!-- global -->
+    <script defer src="./src/js/global/global.js"></script>
+    <script defer src="./src/js/global/header.js"></script>
+    <!-- index -->
+    <script defer src="./src/js/index/slider.js"></script>
+    <script defer src="./src/js/index/category.js"></script>
+    <script defer src="./src/js/index/courses.js"></script>
+    <script defer src="./src/js/index/video-feature.js"></script>
+    <script defer src="./src/js/index/testimonial.js"></script>
+    <script defer src="./src/js/index/partner-logo.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!--start header -->
+
+      <header class="header">
+        <!-- header top -->
+        <section class="bg-secondary hidden lg:block">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div class="py-4 flex-center-between text-gray font-medium">
+              <!-- header top infos -->
+              <div class="flex gap-x-5">
+                <div>
+                  <i class="fa-solid fa-envelope mr-1"></i>
+                  <a href="#">info@yourmail.com</a>
+                </div>
+                <div>
+                  <i class="fa-solid fa-phone mr-1"></i>
+                  <span>+0123-456-5678</span>
+                </div>
+              </div>
+              <!-- header top links -->
+              <div class="flex gap-x-5">
+                <!-- header top links social -->
+                <div class="flex gap-x-3">
+                  <span>Follow Us : </span>
+                  <div class="flex gap-x-3">
+                    <a href="#">
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-youtube"></i>
+                    </a>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+                <!-- header top links auth -->
+                <div class="flex gap-x-2 text-primary font-bold">
+                  <a href="#" class="transition-base hover:text-white">Login</a>
+                  <span>/</span>
+                  <a
+                    href="./register.html"
+                    class="transition-base hover:text-white"
+                    >Register</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- header nagivation -->
+        <section class="header-navigation">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div class="relative flex-center-between py-5 lg:py-0">
+              <!-- header logo -->
+              <a href="./index.html">
+                <img
+                  src="./src/assets/images/dark-logo.png"
+                  alt="dark-logo"
+                  class="header__logo w-[179px] h-[49px]"
+                />
+              </a>
+              <!-- header nav -->
+              <div
+                class="flex items-center gap-x-8 font-medium text-base text-secondary lg:text-sm xl:text-base"
+              >
+                <nav
+                  class="header-nav transition-base z-40 overflow-hidden absolute top-full left-0 right-0 bg-white lg:overflow-visible lg:relative lg:block"
+                >
+                  <ul class="px-3 py-2 flex flex-col lg:p-0 lg:flex-row">
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> HOME </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >HOME 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >HOME 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> COURSES </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >COURSE 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >COURSE 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> PAGES </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >PAGE 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >PAGE 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> EVENTS </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >EVENT 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >EVENT 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> BLOG </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >BLOG 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >BLOG 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative group">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between gap-x-2 hover-text-primary lg:py-8"
+                        ><span> SHOP </span>
+                        <i class="fa fa-chevron-down fa-xs"></i
+                      ></a>
+
+                      <ul
+                        class="header-navSubmenu transition-base z-10 top-full left-0 min-w-[180px] bg-secondary text-white lg:hidden lg:absolute lg:group-hover:block lg:animate-[fade_1s_ease-out]"
+                      >
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-[color:rgba(255,255,255,0.5)] hover-text-primary hover:pl-7"
+                            >SHOP 1</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="px-5 py-2.5 block border-b border-transparent hover-text-primary hover:pl-7"
+                            >SHOP 2</a
+                          >
+                        </li>
+                      </ul>
+                    </li>
+
+                    <li class="relative hidden lg:block">
+                      <a
+                        href="#"
+                        class="px-2 py-2 flex-center-between hover-text-primary lg:py-8"
+                        ><span> CONTACT </span>
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <div
+                  class="flex gap-x-5 text-lg lg:text-base xl:text-lg items-center"
+                >
+                  <a href="#">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </a>
+                  <a href="#" class="relative">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span
+                      class="px-1 text-sm rounded-full absolute top-[-4px] right-[-8px] text-white bg-primary"
+                      >0</span
+                    >
+                  </a>
+                  <!-- header toggle icon -->
+                  <div
+                    class="header-toggleNavBtn expand toggle-menu-icon p-2 w-[48px] cursor-pointer lg:hidden"
+                  >
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                    <div
+                      class="relative transition-base my-2 h-[1px] bg-secondary"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <!-- end header -->
+
+      <!-- ------------------------------------------------------------------>
+
+      <!-- start slider -->
+
+      <section class="relative slider group">
+        <!-- slider items -->
+        <div class="swipper swipper-slider">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide swiper-slider-slide pt-40 pb-80 bg-[url('../assets/images/sliders/slider-1.jpg')] bg-no-repeat bg-cover"
+            >
+              <div class="container adjust-width">
+                <!-- slider item content -->
+                <div class="text-white overflow-hidden lg:w-[60%]">
+                  <h2
+                    class="slide-slider-title font-bold pb-6 text-2xl sm:text-5xl lg:text-6xl"
+                  >
+                    Choose the right theme for education
+                  </h2>
+                  <p class="slide-slider-para pb-12 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Repudiandae, maiores! Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Nemo unde consequuntur magnam
+                    neque voluptatibus inventore, quo corrupti adipisci
+                    distinctio mollitia.
+                  </p>
+                  <div class="flex gap-5 flex-wrap">
+                    <a href="#" class="slide-slider-btn btn-primary"
+                      >Read More</a
+                    >
+                    <a href="#" class="slide-slider-btn btn-primary"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="swiper-slide swiper-slider-slide pt-40 pb-80 bg-[url('../assets/images/sliders/slider-2.jpg')] bg-no-repeat bg-cover"
+            >
+              <div class="container adjust-width">
+                <!-- slider item content -->
+                <div class="text-white overflow-hidden lg:w-[60%]">
+                  <h2
+                    class="slide-slider-title font-bold pb-6 text-2xl sm:text-5xl lg:text-6xl"
+                  >
+                    Choose the right theme for education
+                  </h2>
+                  <p class="slide-slider-para pb-12 font-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Repudiandae, maiores! Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Nemo unde consequuntur magnam
+                    neque voluptatibus inventore, quo corrupti adipisci
+                    distinctio mollitia.
+                  </p>
+                  <div class="flex gap-5 flex-wrap">
+                    <a href="#" class="slide-slider-btn btn-primary"
+                      >Read More</a
+                    >
+                    <a href="#" class="slide-slider-btn btn-primary"
+                      >Get Started</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider prev btn -->
+        <div
+          class="hidden slider-prev rounded-full cursor-pointer w-[50px] h-[50px] text-white border-white border absolute z-10 left-[3%] center-y-position hover-bg-primary hover:border-primary group-hover:block animate-[fade_1s_ease-out]"
+        >
+          <i class="fa fa-angle-left center-position"></i>
+        </div>
+        <!-- slider next btn -->
+        <div
+          class="hidden slider-next rounded-full cursor-pointer w-[50px] h-[50px] text-white border-white border absolute z-10 right-[3%] center-y-position hover-bg-primary hover:border-primary group-hover:block animate-[fade_1s_ease-out]"
+        >
+          <i class="fa fa-angle-right center-position"></i>
+        </div>
+      </section>
+
+      <!-- end slider -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start category -->
+
+      <section class="category relative z-10 -mt-40">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div
+            class="px-4 py-6 bg-secondary text-white rounded-lg grid grid-cols-1 md:px-10 lg:px-14 sm:py-12 lg:grid-cols-[1fr_2fr]"
+          >
+            <!-- category title -->
+            <h2
+              class="text-2xl font-bold mb-10 text-center sm:text-4xl lg:text-start lg:pr-8 xl:pr-24"
+            >
+              Best platform to learn everything
+            </h2>
+            <!-- category slider -->
+            <div class="relative px-16 overflow-hidden">
+              <div class="swipper swipper-category overflow-hidden">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="flex flex-col items-center gap-y-5 py-6 bg-[#B5D56A] rounded"
+                    >
+                      <img
+                        src="./src/assets/images/categories/graduation-hat-150x150.png"
+                        alt="image"
+                        class="max-w-[80px]"
+                      />
+                      <span class="font-bold text-lg">Programs</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="flex flex-col items-center gap-y-5 py-6 bg-[#FF6F6F] rounded"
+                    >
+                      <img
+                        src="./src/assets/images/categories/education-150x150.png"
+                        alt="image"
+                        class="max-w-[80px]"
+                      />
+                      <span class="font-bold text-lg">Events</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="flex flex-col items-center gap-y-5 py-6 bg-[#4886FF] rounded"
+                    >
+                      <img
+                        src="./src/assets/images/categories/knowledge-150x150.png"
+                        alt="image"
+                        class="max-w-[80px]"
+                      />
+                      <span class="font-bold text-lg">Admissions</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="flex flex-col items-center gap-y-5 py-6 bg-[#009688] rounded"
+                    >
+                      <img
+                        src="./src/assets/images/categories/diploma-150x150.png"
+                        alt="image"
+                        class="max-w-[80px]"
+                      />
+
+                      <span class="font-bold text-lg">Notice</span>
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a
+                      href="#"
+                      class="flex flex-col items-center gap-y-5 py-6 bg-[#F6316F] rounded"
+                    >
+                      <img
+                        src="./src/assets/images/categories/open-book-150x150.png"
+                        alt="image"
+                        class="max-w-[80px]"
+                      />
+                      <span class="font-bold text-lg">Courses</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="slider-category-prev rounded-full cursor-pointer w-[35px] h-[35px] bg-[#557495] text-white left-0 center-y-position hover-bg-primary group-hover:block animate-[fade_1s_ease-out]"
+              >
+                <i class="fa fa-angle-left center-position"></i>
+              </div>
+              <div
+                class="slider-category-next rounded-full cursor-pointer w-[35px] h-[35px] bg-[#557495] text-white right-0 center-y-position hover-bg-primary group-hover:block animate-[fade_1s_ease-out]"
+              >
+                <i class="fa fa-angle-right center-position"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end category -->
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start about -->
+
+      <section class="about relative pt-16 pb-40 lg:pb-48">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="grid grid-cols-1 lg:grid-cols-2">
+            <!-- about heading -->
+            <div class="lg:pr-16">
+              <h5 class="title-with-border-bottom">About us</h5>
+              <h3
+                class="text-2xl mb-7 font-bold leading-[1.2] tracking-wider sm:text-5xl"
+              >
+                Welcome to <br class="hidden lg:block" />
+                Edubin
+              </h3>
+              <p class="mb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                fugit esse commodi corporis aliquid soluta, omnis voluptatibus!
+                Enim sequi aliquam culpa, aut pariatur dolor dicta veritatis
+                natus. Aspernatur quia facere rerum cupiditate! Mollitia illum
+                necessitatibus asperiores voluptates perspiciatis laudantium
+                quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Cum, pariatur? <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                harum ea illo, modi ipsa eveniet ab excepturi quo dolore
+                exercitationem cumque corrupti repudiandae impedit, nobis fugit
+                quod, ad debitis. Tempora.
+              </p>
+              <a href="#" class="btn-primary">Learn more</a>
+            </div>
+            <!-- about time events -->
+            <div
+              class="p-5 mt-10 bg-white opacity-95 shadow-lg rounded sm:p-14 lg:mt-0"
+            >
+              <h3
+                class="text-2xl font-bold leading-[1.2] tracking-wider sm:text-4xl"
+              >
+                Upcoming events
+              </h3>
+
+              <div>
+                <div class="py-6 border-[#cecece] border-b">
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-calendar text-primary fa-sm"></i>
+                    <span class="text-spanColor text-sm">2 December 2018</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="pb-3 pt-1 inline-block text-2xl font-bold tracking-wider hover-text-primary"
+                  >
+                    Campus clean workshop
+                  </a>
+                  <div class="flex items-center flex-wrap gap-y-2 gap-x-7">
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="py-6 border-[#cecece] border-b">
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-calendar text-primary fa-sm"></i>
+                    <span class="text-spanColor text-sm">2 December 2018</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="pb-3 pt-1 inline-block text-2xl font-bold tracking-wider hover-text-primary"
+                  >
+                    Campus clean workshop
+                  </a>
+                  <div class="flex items-center flex-wrap gap-y-2 gap-x-7">
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="py-6">
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-calendar text-primary fa-sm"></i>
+                    <span class="text-spanColor text-sm">2 December 2018</span>
+                  </div>
+                  <a
+                    href="#"
+                    class="pb-3 pt-1 inline-block text-2xl font-bold tracking-wider hover-text-primary"
+                  >
+                    Campus clean workshop
+                  </a>
+                  <div class="flex items-center flex-wrap gap-y-2 gap-x-7">
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                    <div class="flex items-center gap-x-2">
+                      <i class="fa-regular fa-clock text-primary fa-sm"></i>
+                      <span class="text-spanColor text-sm"
+                        >2 December 2018</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-bg absolute right-0 bottom-0 width-[50%] -z-[1]">
+          <img
+            src="./src/assets/images/abouts/events-bg-img.jpg"
+            alt="about-bg"
+          />
+        </div>
+      </section>
+
+      <!-- end about -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start apply -->
+
+      <section class="apply">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div
+            class="pb-32 grid grid-cols-1 lg:grid-cols-2 rounded-md overflow-hidden gap-y-7"
+          >
+            <!-- apply block left -->
+            <div class="p-12 bg-secondary text-white">
+              <h3 class="mb-5 text-3xl font-bold">Apply for fall 2019</h3>
+              <p class="font-medium mb-7">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                corrupti nemo praesentium laudantium quaerat quibusdam commodi
+                itaque. Repudiandae, est consequuntur?
+              </p>
+              <a href="#" class="btn-primary border hover:border-primary"
+                >Apply Now</a
+              >
+            </div>
+            <!-- apply block right -->
+            <div class="p-12 bg-[color:#092e56] text-white">
+              <h3 class="mb-5 text-3xl font-bold">Apply for fall 2019</h3>
+              <p class="font-medium mb-7">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                corrupti nemo praesentium laudantium quaerat quibusdam commodi
+                itaque. Repudiandae, est consequuntur?
+              </p>
+              <a href="#" class="btn-primary border hover:border-primary"
+                >Apply Now</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end apply-->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start courses -->
+
+      <section class="courses bg-coursesBg">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="py-14 sm:py-28">
+            <!-- courses heading -->
+            <div class="mb-16">
+              <h5 class="title-with-border-bottom font-bold">Our course</h5>
+              <div class="flex-center-between">
+                <h3 class="text-2xl font-bold tracking-wider sm:text-5xl">
+                  Featured courses
+                </h3>
+                <div class="flex items-center gap-x-3">
+                  <button
+                    class="slider-courses-prev transition-base px-4 py-2 rounded border border-[color:#aaaaaa] hover:bg-primary hover:border-primary"
+                  >
+                    <i class="fa fa-angle-left"></i>
+                  </button>
+                  <button
+                    class="slider-courses-next transition-base px-4 py-2 rounded border border-[color:#aaaaaa] hover:bg-primary hover:border-primary"
+                  >
+                    <i class="fa fa-angle-right"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- courses slider -->
+            <div class="swipper swipper-courses overflow-hidden">
+              <div class="swiper-wrapper swipper-courses-list">
+                <div class="swiper-slide">
+                  <div class="rounded shadow bg-white overflow-hidden">
+                    <div class="relative grid grid-cols-1">
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/images/cu-1.jpg"
+                          alt="image"
+                          class="w-full object-cover hover-scale-img"
+                        />
+                      </div>
+                      <div
+                        class="px-3 py-1 absolute left-[10px] top-[15px] text-xs font-bold rounded bg-secondary text-white"
+                      >
+                        Beginner
+                      </div>
+                      <div
+                        class="px-1.5 py-0.5 absolute right-[10px] top-[15px] rounded bg-white"
+                      >
+                        <i class="fa-solid fa-bag-shopping fa-sm"></i>
+                      </div>
+                    </div>
+                    <div class="px-6 py-4 border-b border-borderBottomColor">
+                      <div class="flex flex-wrap gap-3 mb-3">
+                        <div class="flex items-center gap-x-1 text-primary">
+                          <i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i>
+                        </div>
+                        <span class="text-sm">3.60 (5)</span>
+                      </div>
+
+                      <a href="#">
+                        <h4
+                          class="pb-6 text-xl font-medium hover-text-primary sm:text-2xl"
+                        >
+                          Learn basic javascript from start for beginner
+                        </h4>
+                      </a>
+
+                      <div
+                        class="pb-7 flex items-center gap-x-5 text-spanColor"
+                      >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-user transition-base group-hover:text-primary"
+                          ></i>
+                          173</a
+                        >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-heart transition-base group-hover:text-primary"
+                          ></i>
+                          5h 20m</a
+                        >
+                      </div>
+
+                      <div class="pb-5 flex items-center gap-3">
+                        <a href="#">
+                          <img
+                            src="https://thepixelcurve.com/html/edubin/images/course/teacher/t-2.jpg"
+                            alt="image"
+                            class="rounded-full"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="text-[color:#24486e] font-bold hover-text-primary"
+                          ><span class="text-spanColor">by</span> Mark Alen
+                          <span class="text-spanColor">In</span> Languages</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="px-6 py-4 flex-center-between">
+                      <div class="font-bold text-secondary">Free</div>
+                      <a href="#" class="text-spanColor">
+                        <i class="fa fa-heart text-primary"></i> Get Enrolled
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded shadow bg-white overflow-hidden">
+                    <div class="relative grid grid-cols-1">
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/images/cu-1.jpg"
+                          alt="image"
+                          class="w-full object-cover hover-scale-img"
+                        />
+                      </div>
+                      <div
+                        class="px-3 py-1 absolute left-[10px] top-[15px] text-xs font-bold rounded bg-secondary text-white"
+                      >
+                        Beginner
+                      </div>
+                      <div
+                        class="px-1.5 py-0.5 absolute right-[10px] top-[15px] rounded bg-white"
+                      >
+                        <i class="fa-solid fa-bag-shopping fa-sm"></i>
+                      </div>
+                    </div>
+                    <div class="px-6 py-4 border-b border-borderBottomColor">
+                      <div class="flex flex-wrap gap-3 mb-3">
+                        <div class="flex items-center gap-x-1 text-primary">
+                          <i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i>
+                        </div>
+                        <span class="text-sm">3.60 (5)</span>
+                      </div>
+
+                      <a href="#">
+                        <h4
+                          class="pb-6 text-xl font-medium hover-text-primary sm:text-2xl"
+                        >
+                          Learn basic javascript from start for beginner
+                        </h4>
+                      </a>
+
+                      <div
+                        class="pb-7 flex items-center gap-x-5 text-spanColor"
+                      >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-user transition-base group-hover:text-primary"
+                          ></i>
+                          173</a
+                        >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-heart transition-base group-hover:text-primary"
+                          ></i>
+                          5h 20m</a
+                        >
+                      </div>
+
+                      <div class="pb-5 flex items-center gap-3">
+                        <a href="#">
+                          <img
+                            src="https://thepixelcurve.com/html/edubin/images/course/teacher/t-2.jpg"
+                            alt="image"
+                            class="rounded-full"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="text-[color:#24486e] font-bold hover-text-primary"
+                          ><span class="text-spanColor">by</span> Mark Alen
+                          <span class="text-spanColor">In</span> Languages</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="px-6 py-4 flex-center-between">
+                      <div class="font-bold text-secondary">Free</div>
+                      <a href="#" class="text-spanColor">
+                        <i class="fa fa-heart text-primary"></i> Get Enrolled
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="rounded shadow bg-white overflow-hidden">
+                    <div class="relative grid grid-cols-1">
+                      <div class="overflow-hidden">
+                        <img
+                          src="../assets/images/cu-1.jpg"
+                          alt="image"
+                          class="w-full object-cover hover-scale-img"
+                        />
+                      </div>
+                      <div
+                        class="px-3 py-1 absolute left-[10px] top-[15px] text-xs font-bold rounded bg-secondary text-white"
+                      >
+                        Beginner
+                      </div>
+                      <div
+                        class="px-1.5 py-0.5 absolute right-[10px] top-[15px] rounded bg-white"
+                      >
+                        <i class="fa-solid fa-bag-shopping fa-sm"></i>
+                      </div>
+                    </div>
+                    <div class="px-6 py-4 border-b border-borderBottomColor">
+                      <div class="flex flex-wrap gap-3 mb-3">
+                        <div class="flex items-center gap-x-1 text-primary">
+                          <i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i
+                          ><i class="fa fa-star fa-xs"></i>
+                        </div>
+                        <span class="text-sm">3.60 (5)</span>
+                      </div>
+
+                      <a href="#">
+                        <h4
+                          class="pb-6 text-xl font-medium hover-text-primary sm:text-2xl"
+                        >
+                          Learn basic javascript from start for beginner
+                        </h4>
+                      </a>
+
+                      <div
+                        class="pb-7 flex items-center gap-x-5 text-spanColor"
+                      >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-user transition-base group-hover:text-primary"
+                          ></i>
+                          173</a
+                        >
+                        <a href="#" class="group"
+                          ><i
+                            class="fa fa-heart transition-base group-hover:text-primary"
+                          ></i>
+                          5h 20m</a
+                        >
+                      </div>
+
+                      <div class="pb-5 flex items-center gap-3">
+                        <a href="#">
+                          <img
+                            src="https://thepixelcurve.com/html/edubin/images/course/teacher/t-2.jpg"
+                            alt="image"
+                            class="rounded-full"
+                          />
+                        </a>
+                        <a
+                          href="#"
+                          class="text-[color:#24486e] font-bold hover-text-primary"
+                          ><span class="text-spanColor">by</span> Mark Alen
+                          <span class="text-spanColor">In</span> Languages</a
+                        >
+                      </div>
+                    </div>
+
+                    <div class="px-6 py-4 flex-center-between">
+                      <div class="font-bold text-secondary">Free</div>
+                      <a href="#" class="text-spanColor">
+                        <i class="fa fa-heart text-primary"></i> Get Enrolled
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end courses -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start video feature -->
+
+      <section
+        class="video-feature relative bg-[url('../assets/images/videos/bg-1.jpg')] bg-center bg-no-repeat bg-cover"
+      >
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="py-16 grid grid-cols-1 lg:grid-cols-2">
+            <!-- video pop up -->
+            <div
+              class="flex items-center justify-center z-10 lg:justify-start row-start-2 lg:row-auto"
+            >
+              <a
+                href="#"
+                class="pop-up-btn relative inline-block w-[120px] h-[120px] rounded-full bg-primary"
+                ><i class="fa fa-play fa-xl center-position"></i
+              ></a>
+            </div>
+            <!-- video description -->
+            <div class="text-white z-10 lg:pl-28">
+              <h2 class="text-3xl font-bold pb-14 sm:text-4xl">
+                Our Facilities
+              </h2>
+              <ul>
+                <li
+                  class="pb-14 flex items-center flex-wrap gap-8 sm:flex-nowrap"
+                >
+                  <img
+                    src="./src/assets/images/videos/055-contract-11-100x100.png"
+                    alt="image"
+                    class="max-w-[80px]"
+                  />
+                  <div>
+                    <h4 class="text-2xl font-bold pb-3">Global Certificate</h4>
+                    <p class="text-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, quibusdam? Officiis totam quidem ratione aperiam.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="pb-14 flex items-center flex-wrap gap-8 sm:flex-nowrap"
+                >
+                  <img
+                    src="./src/assets/images/videos/015-answer-100x100.png"
+                    alt="image"
+                    class="max-w-[80px]"
+                  />
+                  <div>
+                    <h4 class="text-2xl font-bold pb-3">Global Certificate</h4>
+                    <p class="text-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, quibusdam? Officiis totam quidem ratione aperiam.
+                    </p>
+                  </div>
+                </li>
+                <li
+                  class="pb-14 flex items-center flex-wrap gap-8 sm:flex-nowrap"
+                >
+                  <img
+                    src="./src/assets/images/videos/034-ebook-100x100.png"
+                    alt="image"
+                    class="max-w-[80px]"
+                  />
+                  <div>
+                    <h4 class="text-2xl font-bold pb-3">Global Certificate</h4>
+                    <p class="text-medium">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Dolor, quibusdam? Officiis totam quidem ratione aperiam.
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- video feature bg secondary -->
+        <div
+          class="video-feature-bg bg-secondary opacity-90 absolute top-0 right-0 bottom-0 w-full lg:w-[50%]"
+        ></div>
+      </section>
+
+      <!-- end video feature -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start teachers -->
+
+      <section class="teachers">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="pt-20 pb-28 grid grid-cols-1 gap-y-10 lg:grid-cols-2">
+            <!-- teachers heading -->
+            <div class="lg:pr-16">
+              <h5 class="title-with-border-bottom font-bold">Teachers</h5>
+              <h3 class="text-2xl pb-7 font-bold tracking-wider sm:text-5xl">
+                Meet Our teachers
+              </h3>
+              <p class="pb-10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad
+                fugit esse commodi corporis aliquid soluta, omnis voluptatibus!
+                Enim sequi aliquam culpa, aut pariatur dolor dicta veritatis
+                natus. Aspernatur quia facere rerum cupiditate! Mollitia illum
+                necessitatibus asperiores voluptates perspiciatis laudantium
+                quibusdam? Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit. Cum, pariatur? <br />
+                <br />
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                harum ea illo, modi ipsa eveniet ab excepturi quo dolore
+                exercitationem cumque corrupti repudiandae impedit, nobis fugit
+                quod, ad debitis. Tempora.
+              </p>
+              <a href="#" class="btn-primary">Career with us</a>
+            </div>
+
+            <!-- teachers products -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 auto-rows-min">
+              <div class="rounded shadow bg-white overflow-hidden">
+                <div class="relative">
+                  <div>
+                    <img
+                      src="./src/assets/images/teachers/teacher-1.jpg"
+                      alt="image"
+                      class="w-full object-cover hover-scale-img"
+                    />
+                  </div>
+                  <div
+                    class="bg-white py-3 text-center shadow rounded absolute left-[10%] right-[10%] bottom-[6%]"
+                  >
+                    <div class="font-bold hover-text-primary">Mark Alen</div>
+                    <div class="text-sm text-spanColor">Vice Chancellor</div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded shadow bg-white overflow-hidden">
+                <div class="relative">
+                  <div>
+                    <img
+                      src="./src/assets/images/teachers/teacher-2.jpg"
+                      alt="image"
+                      class="w-full object-cover hover-scale-img"
+                    />
+                  </div>
+                  <div
+                    class="bg-white py-3 text-center shadow rounded absolute left-[10%] right-[10%] bottom-[6%]"
+                  >
+                    <div class="font-bold hover-text-primary">Mark Alen</div>
+                    <div class="text-sm text-spanColor">Vice Chancellor</div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded shadow bg-white overflow-hidden">
+                <div class="relative">
+                  <div>
+                    <img
+                      src="./src/assets/images/teachers/teacher-3.jpg"
+                      alt="image"
+                      class="w-full object-cover hover-scale-img"
+                    />
+                  </div>
+                  <div
+                    class="bg-white py-3 text-center shadow rounded absolute left-[10%] right-[10%] bottom-[6%]"
+                  >
+                    <div class="font-bold hover-text-primary">Mark Alen</div>
+                    <div class="text-sm text-spanColor">Vice Chancellor</div>
+                  </div>
+                </div>
+              </div>
+              <div class="rounded shadow bg-white overflow-hidden">
+                <div class="relative">
+                  <div>
+                    <img
+                      src="./src/assets/images/teachers/teacher-4.jpg"
+                      alt="image"
+                      class="w-full object-cover hover-scale-img"
+                    />
+                  </div>
+                  <div
+                    class="bg-white py-3 text-center shadow rounded absolute left-[10%] right-[10%] bottom-[6%]"
+                  >
+                    <div class="font-bold hover-text-primary">Mark Alen</div>
+                    <div class="text-sm text-spanColor">Vice Chancellor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end teatchers -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start publication -->
+
+      <section class="publication bg-[#edf0f2]">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="py-28">
+            <!-- publication heading -->
+            <div class="mb-16">
+              <h5 class="title-with-border-bottom font-bold">Publications</h5>
+              <div class="flex-center-between flex-wrap gap-2">
+                <h3 class="text-2xl font-bold tracking-wider sm:text-5xl">
+                  From Store
+                </h3>
+                <a href="#" class="btn-primary">All Products</a>
+              </div>
+            </div>
+            <!-- publication products-->
+            <div class="grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-4">
+              <div class="p-4 rounded shadow overflow-hidden bg-white">
+                <div class="relative mb-3 group">
+                  <img
+                    src="./src/assets/images/publications/pub-1.jpg"
+                    alt="image"
+                    class="w-full object-cover"
+                  />
+                  <div
+                    class="absolute transition-base top-0 left-0 w-full h-full z-10 opacity-0 bg-[#07294dcc] group-hover:opacity-100"
+                  ></div>
+                  <div
+                    class="transition-base center-position z-20 opacity-0 group-hover:opacity-100"
+                  >
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="pb-4 mb-3 text-center border-b border-borderBottomColor"
+                >
+                  <h4 class="mb-1 font-medium text-lg">Stones The Road</h4>
+                  <span class="text-[color:#505050]">By Scott Trench</span>
+                </div>
+                <div class="flex-center-between flex-wrap gap-2">
+                  <div>
+                    <span class="line-through text-sm"> $250 </span>
+                    <span class="text-secondary font-bold"> $200 </span>
+                  </div>
+                  <a href="#" class="btn px-4 py-2">
+                    <i class="fa fa-cart-plus fa-xs mr-1"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 bg-white rounded shadow overflow-hidden">
+                <div class="relative mb-3 group">
+                  <img
+                    src="./src/assets/images/publications/pub-2.jpg"
+                    alt="image"
+                    class="w-full object-cover"
+                  />
+                  <div
+                    class="absolute transition-base bg-[#07294dcc] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100"
+                  ></div>
+                  <div
+                    class="transition-base center-position z-20 opacity-0 group-hover:opacity-100"
+                  >
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="pb-4 mb-3 text-center border-b border-borderBottomColor"
+                >
+                  <h4 class="mb-1 font-medium text-lg">Stones The Road</h4>
+                  <span class="text-[color:#505050]">By Scott Trench</span>
+                </div>
+                <div class="flex-center-between flex-wrap gap-2">
+                  <div>
+                    <span class="line-through text-sm"> $250 </span>
+                    <span class="text-secondary font-bold"> $200 </span>
+                  </div>
+                  <a href="#" class="btn px-4 py-2">
+                    <i class="fa fa-cart-plus fa-xs mr-1"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 bg-white rounded shadow overflow-hidden">
+                <div class="relative mb-3 group">
+                  <img
+                    src="./src/assets/images/publications/pub-3.jpg"
+                    alt="image"
+                    class="w-full object-cover"
+                  />
+                  <div
+                    class="absolute transition-base bg-[#07294dcc] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100"
+                  ></div>
+                  <div
+                    class="transition-base center-position z-20 opacity-0 group-hover:opacity-100"
+                  >
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="pb-4 mb-3 text-center border-b border-borderBottomColor"
+                >
+                  <h4 class="mb-1 font-medium text-lg">Stones The Road</h4>
+                  <span class="text-[color:#505050]">By Scott Trench</span>
+                </div>
+                <div class="flex-center-between flex-wrap gap-2">
+                  <div>
+                    <span class="line-through text-sm"> $250 </span>
+                    <span class="text-secondary font-bold"> $200 </span>
+                  </div>
+                  <a href="#" class="btn px-4 py-2">
+                    <i class="fa fa-cart-plus fa-xs mr-1"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+              <div class="p-4 bg-white rounded shadow overflow-hidden">
+                <div class="relative mb-3 group">
+                  <img
+                    src="./src/assets/images/publications/pub-4.jpg"
+                    alt="image"
+                    class="w-full object-cover"
+                  />
+                  <div
+                    class="absolute transition-base bg-[#07294dcc] top-0 left-0 w-full h-full z-10 opacity-0 group-hover:opacity-100"
+                  ></div>
+                  <div
+                    class="transition-base center-position z-20 opacity-0 group-hover:opacity-100"
+                  >
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa fa-shopping-cart"></i
+                    ></a>
+                    <a
+                      href="#"
+                      class="transition-base mr-2 p-2 text-primary border border-primary hover:border-primary hover:bg-primary hover:text-secondary"
+                      ><i class="fa-solid fa-magnifying-glass"></i
+                    ></a>
+                  </div>
+                </div>
+                <div
+                  class="pb-4 mb-3 text-center border-b border-borderBottomColor"
+                >
+                  <h4 class="mb-1 font-medium text-lg">Stones The Road</h4>
+                  <span class="text-[color:#505050]">By Scott Trench</span>
+                </div>
+                <div class="flex-center-between">
+                  <div>
+                    <span class="line-through text-sm"> $250 </span>
+                    <span class="text-secondary font-bold"> $200 </span>
+                  </div>
+                  <a href="#" class="btn px-4 py-2">
+                    <i class="fa fa-cart-plus fa-xs mr-1"></i>
+                    <span>Buy Now</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end publication -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start testimonial -->
+
+      <section class="testimonial">
+        <div
+          class="relative bg-[url('../assets/images/testimonials/bg-2.jpg')] bg-no-repeat bg-cover bg-center after:absolute after:top-0 after:left-0 after:w-full after:h-full after:bg-[#07294d] after:opacity-80"
+        >
+          <div class="container adjust-width">
+            <!-- content -->
+            <div class="relative py-16 z-10 text-white sm:py-28">
+              <!-- testimonial heading -->
+              <div class="mb-16">
+                <h5
+                  class="relative pb-1 mb-4 text-lg font-bold after:absolute after:left-0 after:top-full after:w-8 after:h-px after:bg-white"
+                >
+                  Testimonial
+                </h5>
+
+                <h3 class="text-2xl font-bold tracking-wider sm:text-5xl">
+                  What they say
+                </h3>
+              </div>
+              <!-- testimonial slider-->
+              <div
+                class="swipper swipper-testimonial pb-24 relative overflow-x-hidden"
+              >
+                <div class="swiper-wrapper">
+                  <!-- testomonial slider items -->
+                  <div
+                    class="swiper-slide text-center flex-col-reverse gap-y-7 flex-center-center sm:flex-row sm:text-start"
+                  >
+                    <div class="relative shrink-0">
+                      <img
+                        src="./src/assets/images/testimonials/tes-1.jpg"
+                        alt="image"
+                        width="90"
+                        height="90"
+                        class="rounded-md"
+                      />
+                      <div
+                        class="absolute rounded-full w-[45px] h-[45px] top-[-20px] right-[-23px] bg-primary"
+                      >
+                        <i
+                          class="fa fa-quote-right fa-xl center-position text-secondary"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div class="font-medium sm:ml-12">
+                      <p class="mb-5 line-clamp-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid ratione facere amet consectetur. Quas
+                        officiis dolor voluptatibus explicabo veniam.
+                      </p>
+                      <h6 class="font-bold">Rubina Helen</h6>
+                      <span class="text-lg">Bsc, Engineering</span>
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide text-center flex-col-reverse gap-y-7 flex-center-center sm:flex-row sm:text-start"
+                  >
+                    <div class="relative shrink-0">
+                      <img
+                        src="./src/assets/images/testimonials/tes-2.jpg"
+                        alt="image"
+                        width="90"
+                        height="90"
+                        class="rounded-md"
+                      />
+                      <div
+                        class="absolute rounded-full w-[45px] h-[45px] top-[-20px] right-[-23px] bg-primary"
+                      >
+                        <i
+                          class="fa fa-quote-right fa-xl center-position text-secondary"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div class="font-medium sm:ml-12">
+                      <p class="mb-5 line-clamp-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid ratione facere amet consectetur. Quas
+                        officiis dolor voluptatibus explicabo veniam.
+                      </p>
+                      <h6 class="font-bold">Rubina Helen</h6>
+                      <span class="text-lg">Bsc, Engineering</span>
+                    </div>
+                  </div>
+                  <div
+                    class="swiper-slide text-center flex-col-reverse gap-y-7 flex-center-center sm:flex-row sm:text-start"
+                  >
+                    <div class="relative shrink-0">
+                      <img
+                        src="./src/assets/images/testimonials/tes-3.jpg"
+                        alt="image"
+                        width="90"
+                        height="90"
+                        class="rounded-md"
+                      />
+                      <div
+                        class="absolute rounded-full w-[45px] h-[45px] top-[-20px] right-[-23px] bg-primary"
+                      >
+                        <i
+                          class="fa fa-quote-right fa-xl center-position text-secondary"
+                        ></i>
+                      </div>
+                    </div>
+
+                    <div class="font-medium sm:ml-12">
+                      <p class="mb-5 line-clamp-3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Harum aliquid ratione facere amet consectetur. Quas
+                        officiis dolor voluptatibus explicabo veniam.
+                      </p>
+                      <h6 class="font-bold">Rubina Helen</h6>
+                      <span class="text-lg">Bsc, Engineering</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end testimonial -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start news -->
+
+      <section class="news">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="py-14 lg:py-28">
+            <!-- news heading -->
+            <div>
+              <h5 class="title-with-border-bottom font-bold">Latest News</h5>
+              <h3 class="pb-12 text-2xl font-bold tracking-wider sm:text-5xl">
+                From the news
+              </h3>
+            </div>
+            <!-- news content -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-7">
+              <!-- new main -->
+              <div>
+                <img
+                  src="./src/assets/images/news/new-1.jpeg"
+                  alt="image"
+                  class="mb-5 w-full object-cover rounded-lg"
+                />
+                <div>
+                  <div class="pb-1 flex items-center flex-wrap gap-y-2 gap-x-7">
+                    <a href="#" class="flex items-center gap-x-2">
+                      <i class="fa fa-calendar text-primary fa-sm"></i>
+                      <span class="text-spanColor">2 December 2018</span>
+                    </a>
+                    <a href="#" class="text-secondary"
+                      >By <span class="text-spanColor">Adam linn</span></a
+                    >
+                  </div>
+                  <a href="#" class="text-2xl font-bold">
+                    <h3 class="pb-3 hover-text-primary">
+                      Tips to grade high cgpa in university life
+                    </h3>
+                  </a>
+                  <p class="line-clamp-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Possimus, officiis. Omnis nesciunt autem atque eos ad ab
+                    possimus, minima voluptas doloremque maiores, rerum, saepe
+                    excepturi quod tempore. Dignissimos, mollitia accusamus.
+                  </p>
+                </div>
+              </div>
+              <!-- news sub -->
+              <div class="flex flex-col gap-y-7">
+                <div class="flex items-center flex-col gap-5 sm:flex-row">
+                  <img
+                    src="./src/assets/images/news/new-2.jpg"
+                    alt="image"
+                    class="w-full sm:max-w-[170px] rounded-lg object-cover sm:w-auto"
+                  />
+                  <div>
+                    <div
+                      class="pb-1 flex items-center flex-wrap gap-y-2 gap-x-7"
+                    >
+                      <a href="#" class="flex items-center gap-x-2">
+                        <i class="fa fa-calendar text-primary fa-sm"></i>
+                        <span class="text-spanColor">2 December 2018</span>
+                      </a>
+                      <a href="#" class="text-secondary"
+                        >By <span class="text-spanColor">Adam linn</span></a
+                      >
+                    </div>
+                    <a href="#" class="text-2xl font-bold">
+                      <h3 class="pb-3 hover-text-primary">
+                        Intellectual communication
+                      </h3>
+                    </a>
+                    <p class="line-clamp">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure, fugiat!
+                    </p>
+                  </div>
+                </div>
+                <div class="flex items-center flex-col gap-5 sm:flex-row">
+                  <img
+                    src="./src/assets/images/news/new-3.jpg"
+                    alt="image"
+                    class="w-full sm:max-w-[170px] rounded-lg object-cover sm:w-auto"
+                  />
+                  <div>
+                    <div
+                      class="pb-1 flex items-center flex-wrap gap-y-2 gap-x-7"
+                    >
+                      <a href="#" class="flex items-center gap-x-2">
+                        <i class="fa fa-calendar text-primary fa-sm"></i>
+                        <span class="text-spanColor">2 December 2018</span>
+                      </a>
+                      <a href="#" class="text-secondary"
+                        >By <span class="text-spanColor">Adam linn</span></a
+                      >
+                    </div>
+                    <a href="#" class="text-2xl font-bold">
+                      <h3 class="pb-3 hover-text-primary">
+                        Intellectual communication
+                      </h3>
+                    </a>
+                    <p class="line-clamp">
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Iure, fugiat!
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end news -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start partner-logo -->
+
+      <section class="partner-logo bg-[#edf0f2]">
+        <div class="container adjust-width">
+          <!-- content -->
+          <div class="py-6 sm:pt-10 sm:pb-16">
+            <!-- partner logo slider -->
+            <div class="swipper swipper-partner-logo overflow-hidden">
+              <div class="swiper-wrapper">
+                <!-- parrtner logo slider items -->
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-1.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-2.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-3.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-4.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-5.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+                <div class="swiper-slide">
+                  <!-- parrtner logo slider item content -->
+                  <a href="#">
+                    <img
+                      src="./src/assets/images/partners/part-6.png"
+                      alt="image"
+                      width="148"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end partner-logo -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- start footer -->
+
+      <footer class="footer">
+        <!-- footer top -->
+        <section class="bg-secondary">
+          <div class="container adjust-width">
+            <!-- content -->
+            <div
+              class="pt-10 pb-20 grid grid-cols-1 gap-7 md:grid-cols-2 lg:grid-cols-[1.5fr_1.5fr_1fr_1fr]"
+            >
+              <!-- start footer top content column 1 -->
+              <div class="col-span-1 sm:col-span-2 md:col-span-1">
+                <a href="#">
+                  <img
+                    src="./src/assets/images/white-logo.png"
+                    alt="white-logo"
+                    class="w-[179px] h-[49px]"
+                  />
+                </a>
+                <p class="my-5 text-white font-medium line-clamp-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab
+                  aspernatur dolores quaerat praesentium accusantium cum
+                  deserunt voluptates est maiores quidem?
+                </p>
+                <div class="flex items-center gap-4">
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-facebook-f"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-twitter"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-youtube"></i
+                  ></a>
+                  <a
+                    href="#"
+                    class="inline-block rounded-full text-white flex-center-center hover-bg-p-text-s w-[35px] h-[35px] bg-[#021d3a]"
+                    ><i class="fa-brands fa-instagram"></i
+                  ></a>
+                </div>
+              </div>
+              <!-- start footer top content column 2 -->
+              <div class="text-white">
+                <h4 class="font-bold text-lg pb-5">Sitemap</h4>
+                <div class="grid grid-cols-2 gap-3">
+                  <div>
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Home</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >About us</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Courses</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >News</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Event</span
+                      ></a
+                    >
+                  </div>
+                  <div>
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Home</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >About us</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Courses</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >News</span
+                      ></a
+                    >
+                    <a href="#" class="pb-3 flex items-center gap-2 group"
+                      ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                      <span
+                        class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                        >Event</span
+                      ></a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!-- start footer top content column 3 -->
+              <div class="text-white">
+                <h4 class="font-bold text-lg pb-5">Sitemap</h4>
+                <div>
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Home</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >About us</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Courses</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >News</span
+                    ></a
+                  >
+                  <a href="#" class="pb-3 flex items-center gap-2 group"
+                    ><i class="fa fa-angle-right fa-xs text-primary"></i>
+                    <span
+                      class="transition-base group-hover:translate-x-2 group-hover:text-primary"
+                      >Event</span
+                    ></a
+                  >
+                </div>
+              </div>
+              <!-- start footer top content column 4 -->
+              <div class="text-white col-span-1 sm:col-span-2 md:col-span-1">
+                <h4 class="pb-5 font-bold text-lg">Contact us</h4>
+
+                <div>
+                  <div class="flex mb-2.5">
+                    <i class="fa fa-home fa-sm pt-3.5 pr-4 text-primary"></i>
+                    <span
+                      >143 castle road 517 district, kiyev port south
+                      Canada</span
+                    >
+                  </div>
+
+                  <div class="flex items-center mb-2.5">
+                    <i class="fa fa-phone fa-sm pr-4 text-primary"></i>
+                    <span>+3 123 456 789</span>
+                  </div>
+
+                  <div class="flex items-center mb-2.5">
+                    <i class="fa fa-home fa-sm pr-4 text-primary"></i>
+                    <span>info@yourmail.com</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- footer bottom -->
+        <section class="bg-[#021d3a]">
+          <div class="container adjust-width">
+            <div
+              class="py-6 flex-center-between flex-col text-center font-medium text-white md:flex-row"
+            >
+              <div class="mb-5 md:mb-0">
+                © Copyrights 2020 Edubin All rights reserved.
+              </div>
+              <div>Designed by Pixelcurve</div>
+            </div>
+          </div>
+        </section>
+      </footer>
+
+      <!-- end footer -->
+
+      <!-- ---------------------------------------------------------------- -->
+
+      <!-- ---------------------------------------------------------------- -->
+    </div>
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- start scroll to top -->
+
+    <a
+      href="#"
+      class="scroll-to-top invisible transition-base fixed z-40 flex-center-center rounded-lg w-[40px] h-[40px] bottom-[30px] right-[30px] bg-primary text-white hover:bg-secondary"
+    >
+      <i class="fa fa-angle-up"></i>
+    </a>
+
+    <!-- end scroll to top -->
+
+    <!-- ---------------------------------------------------------------- -->
+
+    <!-- start video -->
+
+    <div class="video hidden fixed top-0 left-0 right-0 bottom-0 z-40">
+      <div class="p-12 flex-center-center w-full h-full">
+        <div class="w-full max-w-[900px]">
+          <div class="relative pt-[56.25%] w-full z-50">
+            <button
+              class="turn-off-btn transition-base absolute top-[-30px] right-[10px] font-bold opacity-50 text-white hover:opacity-100"
+            >
+              X
+            </button>
+            <iframe
+              id="iframe"
+              class="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/HwVCeUNUIEE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <div
+        class="video-bg absolute top-0 left-0 right-0 bottom-0 opacity-80 bg-[#0b0b0b]"
+      ></div>
+    </div>
+
+    <!-- end video -->
+
+    <!-- ---------------------------------------------------------------- -->
+  </body>
+</html>
